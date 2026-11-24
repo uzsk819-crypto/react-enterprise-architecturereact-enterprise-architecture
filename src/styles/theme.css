@@ -1,0 +1,140 @@
+/* Central CSS Variables for Dynamic Theme System */
+:root {
+  /* Default Brand: Modern Indigo / Slate */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary: #4f46e5;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  --color-secondary-50: #f8fafc;
+  --color-secondary-100: #f1f5f9;
+  --color-secondary-200: #e2e8f0;
+  --color-secondary-500: #64748b;
+  --color-secondary: #475569;
+  --color-secondary-600: #334155;
+  --color-secondary-700: #1e293b;
+
+  /* Surfaces & Typography (Light Mode) */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f5f9;
+  --color-border: #e2e8f0;
+  
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+
+  /* Feedback Colors */
+  --color-success: #10b981;
+  --color-success-surface: #ecfdf5;
+  --color-success-text: #065f46;
+
+  --color-warning: #f59e0b;
+  --color-warning-surface: #fffbeb;
+  --color-warning-text: #92400e;
+
+  --color-danger: #ef4444;
+  --color-danger-surface: #fef2f2;
+  --color-danger-text: #991b1b;
+
+  /* Configurable Design Tokens */
+  --border-radius: 0.5rem;
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --color-bg: #090d16;
+  --color-surface: #111827;
+  --color-surface-hover: #1f2937;
+  --color-border: #1f2937;
+  
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  --color-success-surface: #064e3b;
+  --color-success-text: #a7f3d0;
+
+  --color-warning-surface: #78350f;
+  --color-warning-text: #fde68a;
+
+  --color-danger-surface: #7f1d1d;
+  --color-danger-text: #fecaca;
+
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+}
+
+/* Brand Palette Overrides: Emerald / Forest */
+[data-brand="emerald"] {
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary: #059669;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+}
+
+/* Brand Palette Overrides: Ocean Blue */
+[data-brand="blue"] {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary: #2563eb;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+}
+
+/* Brand Palette Overrides: Violet / Purple */
+[data-brand="violet"] {
+  --color-primary-50: #f5f3ff;
+  --color-primary-100: #ede9fe;
+  --color-primary-200: #ddd6fe;
+  --color-primary-300: #c4b5fd;
+  --color-primary-400: #a78bfa;
+  --color-primary-500: #8b5cf6;
+  --color-primary: #7c3aed;
+  --color-primary-600: #7c3aed;
+  --color-primary-700: #6d28d9;
+  --color-primary-800: #5b21b6;
+  --color-primary-900: #4c1d95;
+}
+
+/* Brand Palette Overrides: Rose */
+[data-brand="rose"] {
+  --color-primary-50: #fff1f2;
+  --color-primary-100: #ffe4e6;
+  --color-primary-200: #fecdd3;
+  --color-primary-300: #fda4af;
+  --color-primary-400: #fb7185;
+  --color-primary-500: #f43f5e;
+  --color-primary: #e11d48;
+  --color-primary-600: #e11d48;
+  --color-primary-700: #be123c;
+  --color-primary-800: #9f1239;
+  --color-primary-900: #881337;
+}
+
+/* Radius Variants */
+[data-radius="none"] { --border-radius: 0px; }
+[data-radius="sm"] { --border-radius: 0.25rem; }
+[data-radius="md"] { --border-radius: 0.5rem; }
+[data-radius="lg"] { --border-radius: 0.75rem; }
+[data-radius="full"] { --border-radius: 9999px; }
